@@ -18,8 +18,12 @@ with open ('Arquivo de IPs.txt', 'w') as AIP:
 
 
 ssh = paramiko.SSHClient()
+
+#Nome de usuário que será utilizado para conexão
 username = 'root'
-password = 'PrintRJ45'
+
+#Adcione sua senha aqui
+password = ''
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 ssh.connect(hostname=IP, username=username, password=password)
 with open ('script.txt', 'r') as script:
