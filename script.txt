@@ -1,0 +1,4 @@
+ip a
+ip route
+echo fim
+echo ///
